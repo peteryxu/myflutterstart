@@ -3,3 +3,4 @@ export 'topics.dart';
 export 'quiz.dart';
 export 'profile.dart';
 export 'about.dart';
+export 'hero.dart';
