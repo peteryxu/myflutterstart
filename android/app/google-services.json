@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "244626784052",
+    "firebase_url": "https://high-school-connect-ca098.firebaseio.com",
+    "project_id": "high-school-connect-ca098",
+    "storage_bucket": "high-school-connect-ca098.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:244626784052:android:9aa0ed6ab0f37c71",
+        "android_client_info": {
+          "package_name": "com.hitechhandymen.template"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "244626784052-03pp4s29p71b19qiiqh00i1p7qchov7k.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.hitechhandymen.template",
+            "certificate_hash": "de719945b12ddd44608aa7315e5479cbf001f25e"
+          }
+        },
+        {
+          "client_id": "244626784052-9a6o1khde9gke5tk5q030qqcot9mbahs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCljo1zQxJIh-oKo1oAJAB2NJNIFUW5DhQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "244626784052-9a6o1khde9gke5tk5q030qqcot9mbahs.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "244626784052-3n9o4qjfo8q17tdkttsa5md1kklh4s61.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.hitechhandymen.template"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
