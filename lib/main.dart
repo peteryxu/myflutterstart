@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:firebase_analytics/observer.dart';
 import 'package:firebase_analytics/firebase_analytics.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:templateapp/screens/chatlist.dart';
+import 'package:templateapp/screens/settings.dart';
 import 'services/services.dart';
 import 'screens/screens.dart';
 import 'package:provider/provider.dart';
@@ -26,9 +28,11 @@ class MyApp extends StatelessWidget {
         routes: {
           '/': (context) => LoginScreen(),
           '/topics': (context) => TopicsScreen(),
+          '/chat': (context) => ChatListScreen(currentUserId: Provider.of<FirebaseUser>(context).uid),
           '/profile': (context) => ProfileScreen(),
           '/about': (context) => AboutScreen(),
           '/hero': (context) => HeroScreen(),
+          '/settings': (context) => Settings(),
         },
 
         // Theme

@@ -10,6 +10,9 @@ class AppBottomNav extends StatelessWidget {
             icon: Icon(FontAwesomeIcons.graduationCap, size: 20),
             title: Text('Topics')),
         BottomNavigationBarItem(
+            icon: Icon(FontAwesomeIcons.addressBook, size: 20),
+            title: Text('Chat')),        
+        BottomNavigationBarItem(
             icon: Icon(FontAwesomeIcons.userCircle, size: 20),
             title: Text('Hero')),    
         BottomNavigationBarItem(
@@ -24,9 +27,12 @@ class AppBottomNav extends StatelessWidget {
             // do nuttin
             break;
           case 1:
-            Navigator.pushNamed(context, '/hero');
+            Navigator.pushNamed(context, '/chat');
             break;
           case 2:
+            Navigator.pushNamed(context, '/hero');
+            break;  
+          case 3:
             Navigator.pushNamed(context, '/about');
             break;
         }

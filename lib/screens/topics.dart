@@ -22,6 +22,11 @@ class TopicsScreen extends StatelessWidget {
                   icon: Icon(FontAwesomeIcons.userCircle,
                       color: Colors.pink[200]),
                   onPressed: () => Navigator.pushNamed(context, '/profile'),
+                ),
+                IconButton(
+                  icon: Icon(FontAwesomeIcons.asterisk,
+                      color: Colors.amber[200]),
+                  onPressed: () => Navigator.pushNamed(context, '/settings'),
                 )
               ],
             ),

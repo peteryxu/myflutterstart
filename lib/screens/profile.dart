@@ -3,6 +3,10 @@ import 'package:firebase_auth/firebase_auth.dart';
 import '../services/services.dart';
 import '../shared/shared.dart';
 import 'package:provider/provider.dart';
+import 'package:google_sign_in/google_sign_in.dart';
+
+final GoogleSignIn googleSignIn = GoogleSignIn();
+
 
 class ProfileScreen extends StatelessWidget {
   final AuthService auth = AuthService();
@@ -49,6 +53,10 @@ class ProfileScreen extends StatelessWidget {
                 color: Colors.red,
                 onPressed: () async {
                   await auth.signOut();
+                  //await FirebaseAuth.instance.signOut();
+                  await googleSignIn.disconnect();
+                  await googleSignIn.signOut();     
+
                   Navigator.of(context).pushNamedAndRemoveUntil('/', (route) => false);
                 }),
             Spacer()
