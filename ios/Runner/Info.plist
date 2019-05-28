@@ -2,6 +2,12 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>acess microphone for ML</string>
+	<key>NSCameraUsageDescription</key>
+	<string>access camera to take pic for ML</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>machine learning vision model</string>
 	<key>CFBundleURLTypes</key>
 	<array>
 		<dict>

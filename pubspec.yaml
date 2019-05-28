@@ -31,6 +31,7 @@ dependencies:
   intl: ^0.15.7
 
   firebase_core: ^0.4.0
+  firebase_ml_vision: ^0.8.0+1
   firebase_analytics: ^3.0.1
   cloud_firestore: ^0.11.0+2
   firebase_auth: ^0.11.1
@@ -50,6 +51,9 @@ flutter:
     - assets/
     - assets/covers/
     - assets/congrats.gif
+    - assets/test_face.jpg
+    - assets/test_barcode.jpg
+    - assets/test_text.png
     - images/
     - images/img_not_available.jpeg
     - images/mimi1.gif
