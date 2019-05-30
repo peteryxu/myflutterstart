@@ -17,7 +17,10 @@ class AppBottomNav extends StatelessWidget {
             title: Text('Hero')),    
         BottomNavigationBarItem(
             icon: Icon(FontAwesomeIcons.bolt, size: 20),
-            title: Text('About')),
+            title: Text('AI')),
+        //BottomNavigationBarItem(
+        //    icon: Icon(FontAwesomeIcons.bolt, size: 20),
+        //    title: Text('About')),
         
       ].toList(),
       fixedColor: Colors.deepPurple[200],
@@ -33,7 +36,7 @@ class AppBottomNav extends StatelessWidget {
             Navigator.pushNamed(context, '/hero');
             break;  
           case 3:
-            Navigator.pushNamed(context, '/about');
+            Navigator.pushNamed(context, '/ai');
             break;
         }
       },

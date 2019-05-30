@@ -3,6 +3,7 @@ import 'package:firebase_analytics/observer.dart';
 import 'package:firebase_analytics/firebase_analytics.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:templateapp/screens/chatlist.dart';
+import 'package:templateapp/screens/mlvision.dart';
 import 'package:templateapp/screens/settings.dart';
 import 'services/services.dart';
 import 'screens/screens.dart';
@@ -33,6 +34,7 @@ class MyApp extends StatelessWidget {
           '/about': (context) => AboutScreen(),
           '/hero': (context) => HeroScreen(),
           '/settings': (context) => Settings(),
+          '/ai': (context) => MLVisionScreen(),
         },
 
         // Theme
