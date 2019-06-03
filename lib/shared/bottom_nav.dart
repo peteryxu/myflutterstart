@@ -14,13 +14,16 @@ class AppBottomNav extends StatelessWidget {
             title: Text('Chat')),        
         BottomNavigationBarItem(
             icon: Icon(FontAwesomeIcons.userCircle, size: 20),
-            title: Text('Hero')),    
+            title: Text('Notify')),    
         BottomNavigationBarItem(
             icon: Icon(FontAwesomeIcons.bolt, size: 20),
             title: Text('AI')),
         //BottomNavigationBarItem(
         //    icon: Icon(FontAwesomeIcons.bolt, size: 20),
         //    title: Text('About')),
+        //BottomNavigationBarItem(
+        //    icon: Icon(FontAwesomeIcons.userCircle, size: 20),
+        //    title: Text('Hero')), 
         
       ].toList(),
       fixedColor: Colors.deepPurple[200],
@@ -33,7 +36,7 @@ class AppBottomNav extends StatelessWidget {
             Navigator.pushNamed(context, '/chat');
             break;
           case 2:
-            Navigator.pushNamed(context, '/hero');
+            Navigator.pushNamed(context, '/notify');
             break;  
           case 3:
             Navigator.pushNamed(context, '/ai');

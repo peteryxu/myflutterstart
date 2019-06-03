@@ -2,12 +2,16 @@ import 'package:flutter/material.dart';
 import 'package:firebase_analytics/observer.dart';
 import 'package:firebase_analytics/firebase_analytics.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:templateapp/messaging-route/page/first_page.dart';
+import 'package:templateapp/messaging-route/page/second_page.dart';
 import 'package:templateapp/screens/chatlist.dart';
 import 'package:templateapp/screens/mlvision.dart';
 import 'package:templateapp/screens/settings.dart';
 import 'services/services.dart';
 import 'screens/screens.dart';
 import 'package:provider/provider.dart';
+import 'messaging-route/widget/messaging_widget.dart';
+import 'PushMessagingExample.dart';
 
 void main() => runApp(MyApp());
 
@@ -35,6 +39,8 @@ class MyApp extends StatelessWidget {
           '/hero': (context) => HeroScreen(),
           '/settings': (context) => Settings(),
           '/ai': (context) => MLVisionScreen(),
+          //'/notify': (context) => MessagingScreen(),
+          '/notify': (context) =>  PushMessagingExample(),
         },
 
         // Theme

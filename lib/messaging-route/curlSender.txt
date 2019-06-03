@@ -1,0 +1,23 @@
+https://github.com/flutter/plugins/tree/master/packages/firebase_messaging
+
+
+notification - messages that goes directly to Android's/iOS Notification tray only if your application 
+is in background/killed or gets delivered to onMessage() method if your app is in foreground.
+
+
+data payload - Doesn't matter whether your application is in forground or background or killed, 
+these messages will always be delivered to onMessage() method.
+
+####### SEND Notification from Firebase console:    based on FCM token,  app name, or. topic subscriptions
+For testing purposes, the simplest way to send a notification is via the Firebase Console. Make sure to include click_action: FLUTTER_NOTIFICATION_CLICK as a "Custom data" key-value-pair (under "Advanced options") when targeting an Android device. 
+
+The Firebase Console does not support sending data messages.
+
+######SENDING Notification or data message from CMD
+DATA='{"notification": {"body": "this is a body","title": "first"}, "priority": "high", "data": {"click_action": "FLUTTER_NOTIFICATION_CLICK", "title": "first", "body":"some body text", "id": "1", "status": "done"}, "to": "/topics/all"}'
+curl https://fcm.googleapis.com/fcm/send -H "Content-Type:application/json" -X POST -d "$DATA" -H "Authorization: key=AAAAOPTkfzQ:APA91bHy8u4hxrvrarJuuuUf1lTY98Lv7NyUCtUHcOFLiqfBfFgg9JTrwVXofk1uxOl4bozeAWIOJ7QtEEn_HAjWoVR-gbFQpJUP2NEOWoDM9S_2_BBksPgD8IISL3JT66eOlufqU0Xf"
+
+//android simulator Token:
+dKYqLKuSf3U:APA91bFEkHM6HwlgOgUgJrCaexxrjjSWuL3gvVXMN6ACsU_lC08nEd3dueU7Ab8rETg2tS3Xk-h7YdhrkLIYvHeu_rznH6v3LeJ5oBGj6OxwaHHqtC1mXN8rpJmqcJNJ3BG5TYygQEOK
+
+//ios XS token: 
